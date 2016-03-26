@@ -423,7 +423,6 @@ static int registered = 0;
             case RIL_REQUEST_SIM_OPEN_CHANNEL: ret  = responseInts(p); break;
             case RIL_REQUEST_SIM_CLOSE_CHANNEL: ret  = responseVoid(p); break;
             case RIL_REQUEST_SIM_TRANSMIT_APDU_CHANNEL: ret = responseICC_IO(p); break;
-            case RIL_REQUEST_SIM_GET_ATR: ret = responseString(p); break;
             case RIL_REQUEST_NV_READ_ITEM: ret = responseString(p); break;
             case RIL_REQUEST_SET_3G_CAPABILITY: ret =  responseInts(p); break;
             case RIL_REQUEST_NV_WRITE_ITEM: ret = responseVoid(p); break;
